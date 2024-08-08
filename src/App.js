@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React,{ useState } from 'react';
 import './App.css';
+import Header from './Header'
+import Footer from './Footer'
+import PostHeader from './PostHeader'
+import PostQuestion from './PostQuestion'
+import PostArticle from './PostArticle'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [showQuestion, setShowQuestion] = useState(true);
+
+    return (
+        <div>
+            <Header />
+            <PostHeader setShowQuestion={setShowQuestion} />
+            {showQuestion ? <PostQuestion /> : <PostArticle />}
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

@@ -1,0 +1,48 @@
+.question-div{
+    width: 40%;
+    text-align: left;
+    margin: auto;
+    background-color: lightgray;
+}
+
+.question-header-div{
+    background-color: gray;
+    padding-left: 12px;
+}
+
+.question-title-div{
+    background-color: lightgray;
+    padding-left: 12px;
+}
+
+.question-form{
+    background-color: lightgray;
+    display: inline;
+}
+
+#question_body{
+    resize:none; 
+}
+
+.question-body-div{
+    padding-left: 12px;
+}
+
+.question-tags-div{
+    padding-left: 12px;
+}
+
+.title{
+    display: inline;
+    padding: 0 20px 0 0px;
+    
+}
+
+.article-post-div{
+    text-align: right;
+    padding: 12px 36px 12px 0;
+}
+
+.article-post-button{
+    padding: 12px 40px
+}
